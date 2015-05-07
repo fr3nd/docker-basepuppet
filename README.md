@@ -33,5 +33,8 @@ mod 'puppetlabs/stdlib', '4.6.0'
 mod 'puppetlabs/concat', '1.2.1'
 ```
 
+If you want to use a CentOS based base image, you can use
+fr3nd/basepuppet:centos7 instead
+
 ## FAQ
 
