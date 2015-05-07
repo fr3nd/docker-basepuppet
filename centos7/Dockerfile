@@ -3,7 +3,9 @@ MAINTAINER Carles Amigó, fr3nd@fr3nd.net
 
 RUN yum install -y \
     git \
+    hostname \
     ruby \
+    tar \
     && yum clean all
 
 ENV PUPPET_VERSION 3.7.1
