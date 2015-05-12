@@ -17,6 +17,6 @@ RUN echo "gem: --bindir /usr/bin --no-ri --no-rdoc" > ~/.gemrc
 RUN gem install facter -v $FACTER_VERSION
 RUN gem install puppet -v $PUPPET_VERSION
 RUN mkdir -p /etc/puppet/manifests /etc/puppet/modules
-ADD puppet.conf /etc/puppet/puppet.conf
+COPY puppet.conf /etc/puppet/puppet.conf
 
 RUN gem install r10k -v $R10K_VERSION
